@@ -1,0 +1,14 @@
+language: node_js
+# version of node.js needs to be set. 
+node_js:
+  - 12
+
+# excludes master branch from testing
+# branches:
+#    except:
+#        - master
+
+# scripts to run via travis cia
+script:
+- npm test
+- npm run coveralls

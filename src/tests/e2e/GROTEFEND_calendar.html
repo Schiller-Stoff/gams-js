@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>GROTEFEND</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MobileExplorerInjectionTest</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://glossa.uni-graz.at/archive/objects/query:grotefend.calendar-feasts/methods/sdef:Query/get?params=$2|https://gams.uni-graz.at/o:grotefend.ontology/AarhuusCalendar<datalist><option>http://glossa.uni-graz.at/archive/objects/query:grotefend.calendar-feasts/methods/sdef:Query/get?params=$2|https://gams.uni-graz.at/o:grotefend.ontology/AarhuusCalendar</option></datalist></td><td></td>
+</tr>
+<tr><td>assertElementPresent</td><td>//div[@id='calendar']<datalist><option>//div[@id='calendar']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">popupPresentAfterClickTest</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://glossa.uni-graz.at/archive/objects/query:grotefend.calendar-feasts/methods/sdef:Query/get?params=$2|https://gams.uni-graz.at/o:grotefend.ontology/AarhuusCalendar<datalist><option>http://glossa.uni-graz.at/archive/objects/query:grotefend.calendar-feasts/methods/sdef:Query/get?params=$2|https://gams.uni-graz.at/o:grotefend.ontology/AarhuusCalendar</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='calendar']/div[2]/div/table/tbody/tr/td/div/div/div[2]/div[2]/table/tbody/tr/td/a/div/span<datalist><option>//div[@id='calendar']/div[2]/div/table/tbody/tr/td/div/div/div[2]/div[2]/table/tbody/tr/td/a/div/span</option><option>//div[2]/div[2]/table/tbody/tr/td/a/div/span</option><option>css=a.fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.fc-allow-mouse-resize &gt; div.fc-content &gt; span.fc-title</option></datalist></td><td></td>
+</tr>
+<tr><td>assertElementPresent</td><td>//div[@class='popup-component--popup-main']<datalist><option>//div[@class='popup-component--popup-main']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

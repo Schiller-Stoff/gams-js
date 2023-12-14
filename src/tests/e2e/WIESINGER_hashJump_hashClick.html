@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>WIESINGER_hashJump_hashClick</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">HashClickOnLoad_test_viaClassAssignment</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://glossa.uni-graz.at/context:wiesinger?mode=kommentar#FN3<datalist><option>http://glossa.uni-graz.at/context:wiesinger?mode=kommentar#FN3</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=5<datalist><option>link=5</option><option>xpath=(//a[contains(text(),'5')])[2]</option><option>//div[@id='MainMenu']/div/div/p[2]/sup[4]/a[2]</option><option>//a[contains(@href, '#FN5')]</option><option>//sup[4]/a[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//a[contains(text(),'5')])[6]<datalist><option>xpath=(//a[contains(text(),'5')])[6]</option><option>//div[@id='MainMenu']/div/p[5]/span/a[2]</option><option>//a[contains(@href, '#TFN5')]</option><option>//p[5]/span/a[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td><datalist><option></option></datalist></td><td>2000</td>
+</tr>
+<tr><td>verifyAttribute</td><td>//a[@id='TFN5']@class<datalist><option>xpath=(//a[contains(text(),'5')])[6]</option><option>//div[@id='MainMenu']/div/p[5]/span/a[2]</option><option>//a[contains(@href, '#TFN5')]</option><option>//p[5]/span/a[2]</option><option>xpath=(//a[contains(text(),'5')])[6]@class</option><option>//#TFN5</option><option>//div[@id='TFN5']</option><option>//div[@id='TFN5']@class</option><option>//a[@id='TFN5']@class</option></datalist></td><td>gamsJs--dom-alignedElem</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">HashJumpOnLoadTest</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://glossa.uni-graz.at/context:wiesinger?mode=kommentar#TFN5<datalist><option>http://glossa.uni-graz.at/context:wiesinger?mode=kommentar#TFN5</option></datalist></td><td>http://glossa.uni-graz.at/context:wiesinger?mode=kommentar#TFN5</td>
+</tr>
+<tr><td>verifyAttribute</td><td>//a[@id='TFN5']@class<datalist><option>//a[@id='TFN5']@class</option></datalist></td><td>gamsJs--dom-alignedElem</td>
+</tr>
+</tbody></table>
+</body>
+</html>

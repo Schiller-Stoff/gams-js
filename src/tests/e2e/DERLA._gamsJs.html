@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>DERLA._gamsJs</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">alignHashOnLoad_Test: jump from object -> check if expected class was assigned by gamsJs</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://glossa.uni-graz.at/archive/objects/o:derla.vor17/methods/sdef:TEI/get?mode=metadata&amp;locale=de<datalist><option>http://glossa.uni-graz.at/archive/objects/o:derla.vor17/methods/sdef:TEI/get?mode=metadata&amp;locale=de</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Öffentlich zugänglich<datalist><option>link=Öffentlich zugänglich</option><option>//a[contains(text(),'Öffentlich zugänglich')]</option><option>//a[contains(@href, '/archive/objects/o:derla.thesaurus/methods/sdef:SKOS/get?locale=de#https://gams.uni-graz.at/archive/objects/o:derla.thesaurus#publicAvailable')]</option><option>//td[2]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyAttribute</td><td>//span[@id='https://gams.uni-graz.at/archive/objects/o:derla.thesaurus#publicAvailable']@class<datalist><option>//span[@id='https://gams.uni-graz.at/archive/objects/o:derla.thesaurus#publicAvailable']/span</option><option>//li[3]/span/ul/li/span/span</option><option>//span[@id='https://gams.uni-graz.at/archive/objects/o:derla.thesaurus#publicAvailable']</option><option>//span[@id='https://gams.uni-graz.at/archive/objects/o:derla.thesaurus#publicAvailable']@class</option></datalist></td><td>concept gamsJs--dom-alignedElem</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">mapInjectionSmokeTest</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://glossa.uni-graz.at/archive/objects/query:derla.allderlapoints/methods/sdef:Query/get?locale=de&amp;mode=map<datalist><option>http://glossa.uni-graz.at/archive/objects/query:derla.allderlapoints/methods/sdef:Query/get?locale=de&amp;mode=map</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td><datalist><option></option></datalist></td><td>1000</td>
+</tr>
+<tr><td>assertElementPresent</td><td>//div[@class='gams-geo--geo-control']<datalist><option>//div[@class='gams-geo--geo-control']</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

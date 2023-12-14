@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>geo_gamsTemplateJs</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">element is not hidden by fixed nav, when url is called with correct hash value</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://glossa.uni-graz.at/o:erla.sty/sdef:GML/get?mode=&amp;locale=de#o:erla.sty60<datalist><option>http://glossa.uni-graz.at/o:erla.sty/sdef:GML/get?mode=&amp;locale=de#o:erla.sty60</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyAttribute</td><td>//li[@id='o:erla.sty60']@class<datalist><option>//li[@id='o:erla.sty60']@class</option></datalist></td><td>alignRepair gamsJs--dom-alignedElem</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">element to be jumped via href/id is clickable after jump and not hidden by fixed nav</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://glossa.uni-graz.at/o:erla.sty/sdef:GML/get?mode=&amp;locale=de<datalist><option>link=Test-Id-Sprung zu o:erla.sty40 (für gamsTemplate.js)</option><option>//a[contains(text(),'Test-Id-Sprung zu o:erla.sty40 (für gamsTemplate.js)')]</option><option>//a[@href='http://glossa.uni-graz.at/o:erla.sty/sdef:GML/get?mode=&amp;locale=de#o:erla.sty40']</option><option>//section/a</option><option>css=a.toRepair</option><option>http://glossa.uni-graz.at/o:erla.sty/sdef:GML/get?mode=&amp;locale=de</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Test-Id-Sprung zu o:erla.sty40 (für gamsTemplate.js)<datalist><option>link=Test-Id-Sprung zu o:erla.sty40 (für gamsTemplate.js)</option><option>//a[contains(text(),'Test-Id-Sprung zu o:erla.sty40 (für gamsTemplate.js)')]</option><option>//a[@href='http://glossa.uni-graz.at/o:erla.sty/sdef:GML/get?mode=&amp;locale=de#o:erla.sty40']</option><option>//section/a</option><option>css=a.gamsjs--dom-alignFixedNavLink</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td><datalist><option></option></datalist></td><td>2000</td>
+</tr>
+<tr><td>assertAttribute</td><td>//li[@id='o:erla.sty40']@class<datalist><option>//li[id='o:erla.sty40']</option><option>//li[id='o:erla.sty40']@class</option><option>//li[@id='o:erla.sty40']@class</option></datalist></td><td>alignRepair gamsJs--dom-alignedElem</td>
+</tr>
+</tbody></table>
+</body>
+</html>
